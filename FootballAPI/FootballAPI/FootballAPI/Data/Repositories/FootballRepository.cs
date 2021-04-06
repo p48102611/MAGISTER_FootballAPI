@@ -100,7 +100,7 @@ namespace FootballAPI.Data.Repositories
         public void DeletePlayer(long teamId, long playerId)
         {
             var playerToDelete = _players.FirstOrDefault(p => p.TeamId == teamId && p.Id == playerId);
-            _players.Remove(playerToDelete);
+            _players.Remove(playerToDelete); 
         }
 
         public void DeleteTeam(long teamId)
